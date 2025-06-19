@@ -1,30 +1,6 @@
 <# 
-Sample Script of setting OSDCloud Variables, then triggering OSDCloud using "Start-OSDCloud"
-The values you set in the global variable "MyOSDCloud" will be read in by OSDCloud process and applied.
-
-The start of the script, you can do pre-setup on your device
- - Modify BIOS Settings
- - Set or Remove a BIOS Password
- - Wipe drive (OSDCloud will do this anyway)
- - Set OSDCloud Variables
-
-The end of the script is after OSDCloud has run, but before it reboots into the OS (assuming you set the variable to not have OSDCloud reboot your device)
- - This is handy for running any extra OS modifications while offline
-   - Remove Built in Apps
-   - Add additional drivers via DISM
-   - Add offline features / language packs
-   - whatever you want to do, be creative
-
-Feel free to make a copy of this script and modify the variables.
-If you know to know a full list of variables, look here: https://github.com/OSDeploy/OSD/blob/master/Public/OSDCloud.ps1
-
+Cerdit to Gary Blok for the sample script
 #>
-
-
-#$ScriptName = 'sample.garytown.com'
-#$ScriptVersion = '24.06.28.01'
-#Write-Host -ForegroundColor Green "$ScriptName $ScriptVersion"
-
 
 
 #Variables to define the Windows OS / Edition etc to be applied during OSDCloud
