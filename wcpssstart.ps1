@@ -1,5 +1,6 @@
 <# 
 Cerdit to Gary Blok for the sample script
+ref: https://github.com/gwblok/garytown/blob/master/Dev/CloudScripts/SettingOSDCloudVarsSample.ps1
 #>
 
 
@@ -39,7 +40,7 @@ if ($ImageFileItem){
         $Global:MyOSDCloud.ImageFileItem = $ImageFileItem
         $Global:MyOSDCloud.ImageFileName = $ImageFileName
         $Global:MyOSDCloud.ImageFileFullName = $ImageFileFullName
-        $Global:MyOSDCloud.OSImageIndex = 1 #Pro
+        $Global:MyOSDCloud.OSImageIndex = 1 
     }
 }
 #endregion Custom Image
