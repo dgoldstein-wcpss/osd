@@ -25,6 +25,7 @@ $Global:MyOSDCloud = [ordered]@{
     ClearDiskConfirm = [bool]$False #Skip the Confirmation for wiping drive before format
     ShutdownSetupComplete = [bool]$false #After Setup Complete, instead of Restarting to OOBE, just Shutdown
     SyncMSUpCatDriverUSB = [bool]$true #Sync any MS Update Drivers during WinPE to Flash Drive, saves time in future runs
+    ZTI = [bool]$true #enables zero touch
 }
 
 #Testing Custom Images - Use this if you want to automate using your own WIM / ESD file
@@ -103,9 +104,9 @@ I often do this when I'm developing new features that aren't in the module yet.
 
 #Launch OSDCloud
 Write-Host "Starting OSDCloud" -ForegroundColor Green
-write-host "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage -ZTI"
+write-host "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
 
-Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage -ZTI
+Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
 
 #Anything at this point will now run after OSDCloud WinPE stage is complete, so if you want to make any additional modifications to the OS while Offline, this is when you do it:
 
