@@ -8,7 +8,7 @@ ref: https://github.com/gwblok/garytown/blob/master/Dev/CloudScripts/SettingOSDC
 $OSVersion = 'Windows 11' #Used to Determine Driver Pack
 $OSReleaseID = '24H2' #Used to Determine Driver Pack
 $OSName = 'Windows 11 24H2 x64'
-$OSEdition = 'Education'
+$OSEdition = 'Pro'
 $OSActivation = 'Volume'
 $OSLanguage = 'en-us'
 
