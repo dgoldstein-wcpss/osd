@@ -8,7 +8,7 @@ ref: https://github.com/gwblok/garytown/blob/master/Dev/CloudScripts/SettingOSDC
 $OSVersion = 'Windows 11' #Used to Determine Driver Pack
 $OSReleaseID = '24H2' #Used to Determine Driver Pack
 $OSName = 'Windows 11 24H2 x64'
-$OSEdition = 'Pro'
+$OSEdition = 'Pro Education'
 $OSActivation = 'Volume'
 $OSLanguage = 'en-us'
 
@@ -17,7 +17,7 @@ $OSLanguage = 'en-us'
 $Global:MyOSDCloud = [ordered]@{
     Restart = [bool]$false  #Disables OSDCloud automatically restarting
     RecoveryPartition = [bool]$true #Ensures a Recover partition is created, True is default unless on VM
-    OEMActivation = [bool]$false #Attempts to look up the Windows Code in UEFI and activate Windows OS (SetupComplete Phase)
+    OEMActivation = [bool]$true #Attempts to look up the Windows Code in UEFI and activate Windows OS (SetupComplete Phase)
     WindowsUpdate = [bool]$true #Runs Windows Updates during Setup Complete
     WindowsUpdateDrivers = [bool]$true #Runs WU for Drivers during Setup Complete
     WindowsDefenderUpdate = [bool]$true #Run Defender Platform and Def updates during Setup Complete
