@@ -107,9 +107,9 @@ I often do this when I'm developing new features that aren't in the module yet.
 Write-Host "Starting OSDCloud" -ForegroundColor Green
 write-host "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
 if ($OSEdition -eq $null) { 
-    Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
-} else  {
     Start-OSDCloud -OSName $OSName -OSActivation $OSActivation -OSLanguage $OSLanguage
+} else  {
+    Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
 }
 
 #Anything at this point will now run after OSDCloud WinPE stage is complete, so if you want to make any additional modifications to the OS while Offline, this is when you do it:
