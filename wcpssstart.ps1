@@ -106,7 +106,7 @@ I often do this when I'm developing new features that aren't in the module yet.
 #Launch OSDCloud
 Write-Host "Starting OSDCloud" -ForegroundColor Green
 write-host "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
-if ($OSEdition) { 
+if ($OSEdition -eq $null) { 
     Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
 } else  {
     Start-OSDCloud -OSName $OSName -OSActivation $OSActivation -OSLanguage $OSLanguage
