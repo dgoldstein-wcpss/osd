@@ -44,6 +44,8 @@ if ($ImageFileItem){
         $Global:MyOSDCloud.OSImageIndex = 7
     }
 }
+Write-Host -NoNewLine 'Press any key to continue...';
+$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 #endregion Custom Image
 
 #Testing MS Update Catalog Driver Sync
