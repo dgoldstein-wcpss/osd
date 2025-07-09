@@ -41,7 +41,7 @@ if ($ImageFileItem){
         $Global:MyOSDCloud.ImageFileItem = $ImageFileItem
         $Global:MyOSDCloud.ImageFileName = $ImageFileName
         $Global:MyOSDCloud.ImageFileFullName = $ImageFileFullName
-        $Global:MyOSDCloud.OSImageIndex = 7
+        $Global:MyOSDCloud.OSImageIndex = 1
     }
 }
 
