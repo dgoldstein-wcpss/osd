@@ -119,6 +119,6 @@ if (Test-DISMFromOSDCloudUSB){
 #>
 
 #Restart Computer from WInPE into Full OS to continue Process
-#restart-computer
-Write-Host -NoNewLine 'Press any key to continue...';
-$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+restart-computer
+#Write-Host -NoNewLine 'Press any key to continue...';
+#$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
