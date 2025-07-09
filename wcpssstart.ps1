@@ -8,7 +8,7 @@ ref: https://github.com/gwblok/garytown/blob/master/Dev/CloudScripts/SettingOSDC
 $OSVersion = 'Windows 11' #Used to Determine Driver Pack
 $OSReleaseID = '24H2' #Used to Determine Driver Pack
 $OSName = 'Windows 11 24H2 x64'
-$OSEdition = ''
+$OSEdition = 'Education'
 $OSActivation = 'Volume'
 $OSLanguage = 'en-us'
 
@@ -106,7 +106,7 @@ I often do this when I'm developing new features that aren't in the module yet.
 #Launch OSDCloud
 Write-Host "Starting OSDCloud" -ForegroundColor Green
 write-host "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
-    Start-OSDCloud -OSName $OSName -OSActivation $OSActivation -OSLanguage $OSLanguage
+Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
 
 #Anything at this point will now run after OSDCloud WinPE stage is complete, so if you want to make any additional modifications to the OS while Offline, this is when you do it:
 
