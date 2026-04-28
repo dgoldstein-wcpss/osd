@@ -6,8 +6,8 @@ ref: https://github.com/gwblok/garytown/blob/master/Dev/CloudScripts/SettingOSDC
 
 #Variables to define the Windows OS / Edition etc to be applied during OSDCloud
 $OSVersion = 'Windows 11' #Used to Determine Driver Pack
-$OSReleaseID = '24H2' #Used to Determine Driver Pack
-$OSName = 'Windows 11 24H2 x64'
+$OSReleaseID = '25H2' #Used to Determine Driver Pack
+$OSName = 'Windows 11 25H2 x64'
 $OSEdition = 'Education'
 $OSActivation = 'Volume'
 $OSLanguage = 'en-us'
@@ -30,7 +30,7 @@ $Global:MyOSDCloud = [ordered]@{
 
 #Testing Custom Images - Use this if you want to automate using your own WIM / ESD file
 #Region Custom Image
-$ESDName = 'Windows 11 24H2-Education.wim'
+$ESDName = 'Windows 11 25H2-Education.wim'
 $ImageFileItem = Find-OSDCloudFile -Name $ESDName  -Path '\OSDCloud\OS\'
 if ($ImageFileItem){
     $ImageFileItem = $ImageFileItem | Where-Object {$_.FullName -notlike "C*"} | Where-Object {$_.FullName -notlike "X*"} | Select-Object -First 1
